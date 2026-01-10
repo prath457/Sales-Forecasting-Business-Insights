@@ -1,0 +1,5 @@
+forecast = monthly_sales.rolling(window=3).mean()
+plt.plot(monthly_sales, label='Actual Sales')
+plt.plot(forecast, label='Forecast', linestyle='--')
+plt.legend()
+plt.show()
